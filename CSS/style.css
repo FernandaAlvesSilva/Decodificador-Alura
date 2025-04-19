@@ -1,0 +1,287 @@
+:root {
+    --cor-primaria: #0A3871;
+    --cor-secundaria: #e9edfd;
+    --cor-terciaria: #495057; 
+    --cor-quaternaria: #D8DFE8;
+    --cor-quintaria: #ffffff;
+    --font-family: Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 15rem;
+}
+
+.logo {
+    width: 7rem;
+    margin: 1rem 9rem;
+
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*main*/
+
+
+main{
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*section 1*/
+
+.green{
+    width: 100%;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.subgreen{
+    position: absolute;
+    margin-left: 12.5rem;
+}
+
+.textarea, .areaEncriptador, textarea{
+    width: 100%;
+    height: 20rem;
+    resize: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+ 
+}
+
+#inputText{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+}
+
+
+
+.textarea{
+    padding: 3rem 9rem;
+}
+
+.areaEncriptador{
+    padding: 1rem;
+}
+
+textarea::placeholder, #inputText, .areaEncriptador{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    
+}
+
+.mensagem{
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    margin-top: 6rem;
+    width: 100%;
+    padding: 0 8rem;
+}
+
+.mensagem img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.mensagem p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: .9rem;
+    color: var(--cor-terciaria);
+    opacity: 0.8;
+}
+
+.botao{
+    margin: 1rem 0 0 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: line;
+    font-family: var(--font-family);
+}
+
+.btnEncriptador, .btnDesincriptar{
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    width: 16rem;
+    height: 4rem;
+    cursor: pointer;
+
+}
+
+.btnEncriptador{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+
+}
+
+.btnDesincriptar{
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+}
+
+/*section 2 */
+
+.black{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.retangulo{
+    background-color: var(--cor-quintaria);
+    width: 20rem;
+    height: 36rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 30px 24px -10px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    margin-right: 8rem;
+    top: 2.5rem;
+
+}
+
+/*cont1 */
+
+#conteudo__conteudo-um{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin: 1rem;
+    background-color: var( --cor-quintaria);
+    z-index: 2;
+
+}
+
+#conteudo__conteudo-um img{  
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    margin: 9rem 0 2rem;
+
+
+}
+
+.text{
+    margin: 0 .6rem;
+    text-align: center;
+}
+
+
+.text h1{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.text p{
+    font-size: .9rem;
+    color: var(--cor-terciaria);
+}
+
+/*cont2 */
+
+#conteudo__conteudo-dois{
+    margin: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.botaocop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.btnCopiar{
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    width: 16rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: var(--cor-quintaria); 
+
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 9.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contato{
+    font-family: var(--font-family);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cont a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.cont i{
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+

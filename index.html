@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link id="estilo" rel="stylesheet" href="CSS/style.css">
+    <title>Alura Desafio</title>
+    
+</head>
+<body>
+
+<header>
+    <div class="logo-alura">
+        <img class="logo" src="CSS/img/Alura.png" alt="logo">
+    </div>
+</header>
+
+<main>
+    <section class="green">
+        <div class="subgreen">
+            <div class="textarea">
+                <textarea id="inputText" name="TxtCripto" rows="4" cols="30" placeholder="Digite seu texto aqui..."></textarea>
+            </div>
+
+            <div class="mensagem">
+                <img src="CSS/img/Group.png" alt="sinal-alerta">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="botao">
+                <button class="btnEncriptador" onclick="criptografar()">
+                    <p>Criptografar</p>
+                </button> 
+
+                <button class="btnDesincriptar" onclick="descriptografar()">
+                    <p>Descriptografar</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="black">
+        <div class="retangulo">
+            <div class="conteudo conteudo-um" id="conteudo__conteudo-um">
+                <img src="CSS/img/Vector.png" class="img__menina" alt="vetor-menina">
+                <div class="text">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            
+
+            <div class="conteudo  conteudo-dois" id="conteudo__conteudo-dois">
+                <textarea id="outputText" class="areaEncriptador" rows="4" cols="30"></textarea>
+                <div class="botaocop">
+                    <button id="botaoCopia" class="btnCopiar" onclick="copiar()">
+                        <p>Copiar</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="contato">
+        <div class="cont">
+            <p>Desenvolvido por Fernanda Alves</p>
+            <p>Alura - 2024</p>
+            <a href="https://www.linkedin.com/in/fernanda-alves-605a76242/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/FernandaAlvesSilva"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!--  JavaScript -->
+    <script src="cripto.js"></script>
+
+</body>
+</html>
