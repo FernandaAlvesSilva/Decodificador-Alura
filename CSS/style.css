@@ -16,10 +16,6 @@
 body {
     background-color: var(--cor-secundaria);
     max-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     font-family: var(--font-family);
 }
 
@@ -27,7 +23,7 @@ body {
 
 header{
     width: 100%;
-    height: 15rem;
+    height: 5rem;
 }
 
 .logo {
@@ -47,7 +43,7 @@ header{
 
 main{
     width: 100%;
-    height: 100rem;
+    height: 40rem;
     display: flex;
     justify-content: center;
 }
@@ -58,15 +54,15 @@ main{
 .green{
     width: 100%;
     display: flex;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .subgreen{
-    position: absolute;
-    margin-left: 12.5rem;
+    position: relative;
+    margin-top: 3rem;
+
 }
 
 .textarea, .areaEncriptador, textarea{
@@ -161,7 +157,7 @@ textarea::placeholder, #inputText, .areaEncriptador{
 /*section 2 */
 
 .black{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,10 +169,8 @@ textarea::placeholder, #inputText, .areaEncriptador{
     height: 36rem;
     border-radius: 1.5rem;
     box-shadow: 0 30px 24px -10px rgba(0, 0, 0, 0.08);
-    position: absolute;
+    position: relative;
     margin-right: 8rem;
-    top: 2.5rem;
-
 }
 
 /*cont1 */
@@ -250,7 +244,7 @@ textarea::placeholder, #inputText, .areaEncriptador{
 
 footer{
     width: 100%;
-    height: 9.0rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,5 +277,66 @@ footer{
 .cont i{
     color: var(--cor-primaria);
     font-size: 1.5rem;
+}
+
+
+
+/*media queries*/
+@media (max-width: 900px) {
+
+    .logo{
+        width: 5rem;
+        margin: 1rem 2rem;
+    }
+
+    .green{
+        height: 100%;
+    }
+
+    .subgreen{
+        margin-top: 1rem;
+    }
+
+    .mensagem{
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+
+    .textarea, .areaEncriptador, textarea{
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .botao{
+        flex-direction: column;
+        margin: 1rem 0 0 0;
+        padding: 0 2rem;
+    }
+
+    .black{
+        height: 100%;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100rem;
+    }
+    .retangulo{
+        margin-right: 0;
+    }
+
+    footer{
+        height: 10rem;
+        flex-direction: column;
+    }
+
+    .cont{
+        flex-direction: column;
+    }
+
+    .fa-brands{
+        flex-direction: row;
+    }
 }
 
